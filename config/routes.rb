@@ -1,4 +1,7 @@
 Adan::Application.routes.draw do
+  resources :denuncias_transitos
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

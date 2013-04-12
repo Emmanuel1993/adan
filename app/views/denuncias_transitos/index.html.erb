@@ -1,0 +1,26 @@
+<div data-role="header">
+    <h1>Lista de Denuncias de Transito</h1>
+    <%= link_to 'Nuevo', new_denuncias_transito_path, "data-icon" => "ui-btn-right" %>
+</div>
+  
+<div data-role="content">
+  <ul data-role="listview">
+    <% @denuncias_transitos.each do |denuncias_transito| %>
+    <li>
+    <%= denuncias_transito.numPatrulla %>
+    <%= denuncias_transito.numOficial %>
+    <%= denuncias_transito.apPaterno %>
+    <%= denuncias_transito.apMaterno %>
+    <%= denuncias_transito.lugarHecho %>
+    <%= denuncias_transito.municipio %>
+    <%= denuncias_transito.fecha %>
+    <%= denuncias_transito.hora %>
+    <%= denuncias_transito.descripcion %>
+    <%= link_to 'Show', denuncias_transito %>
+    <%= link_to 'Edit', edit_denuncias_transito_path(denuncias_transito) %>
+    <%= link_to 'Destroy', denuncias_transito, method: :delete, data: { confirm: 'Are you sure?' } %>
+      
+    </li>
+    <% end %>
+  </ul>
+</div>
