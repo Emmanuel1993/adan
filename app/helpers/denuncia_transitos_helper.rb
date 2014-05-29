@@ -1,0 +1,2 @@
+module DenunciaTransitosHelper
+end

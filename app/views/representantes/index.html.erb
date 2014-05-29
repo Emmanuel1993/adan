@@ -1,0 +1,28 @@
+
+<div data-role="page">
+	<div data-role="header">
+	<h1>representantes</h1>
+	<%= link_to 'Regresar', inicios_path %>
+	<%= link_to 'Agregar', new_representante_path, {"data-icon" => "plus", "data-theme" => "a"} %>
+	</div>
+	<div data-role="content">
+	  <ul data-role="listview">
+	
+	   		<% @representantes.each do |representante| %>
+	   		
+	   			<% if representante.camara == "D"%>
+	        
+	        <li>
+	        <%= image_tag representante.twitteravatar %>
+	        <%= link_to representante.nombre, representante %>
+	       	<%= link_to 'edit representante', edit_representante_path(representante), "data-icon" => "gear" %>
+	
+			</li>
+			<% end %>
+	    <% end %>
+	    </ul>
+	</div>
+</div>
+
+
+

@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  num: 1
+  nombre: MyString
+  partido: MyString
+  eleccion: MyString
+  estado: MyString
+  camara: MyString
+  propietario: MyString
+  twitter: MyString
+  youtube: MyString
+  facebook: MyString
+  paginapersonal: MyString
+  twitteravatar: MyString
+
+two:
+  num: 1
+  nombre: MyString
+  partido: MyString
+  eleccion: MyString
+  estado: MyString
+  camara: MyString
+  propietario: MyString
+  twitter: MyString
+  youtube: MyString
+  facebook: MyString
+  paginapersonal: MyString
+  twitteravatar: MyString

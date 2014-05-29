@@ -1,0 +1,49 @@
+
+
+<div data-role="header">
+	
+	<h2> <%= @denuncia_transito.nombre %></h2>
+	<%= link_to 'Regresar', denuncia_transitos_path %>
+	<%= link_to 'Editar', edit_denuncia_transito_path(@denuncia_transito) %>
+	
+		
+</div>
+
+<div data-role="content">
+	
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @denuncia_transito.nombre %>
+</p>
+
+<p>
+  <strong>Ubicacion:</strong>
+  <%= @denuncia_transito.ubicacion %>
+</p>
+
+<p>
+  <strong>Dependencia:</strong>
+  <%= @denuncia_transito.dependencia %>
+</p>
+
+<p>
+  <strong>Estado:</strong>
+  <%= @denuncia_transito.estado %>
+</p>
+
+<p>
+  <strong>Municipio:</strong>
+  <%= @denuncia_transito.municipio %>
+</p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @denuncia_transito.fecha %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @denuncia_transito.descripcion %>
+</p>
+</div>

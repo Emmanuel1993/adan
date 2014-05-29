@@ -1,0 +1,26 @@
+<div data-role="header">
+<h1>Denuncias</h1>
+<%= link_to 'Regresar', inicios_path %>
+<%= link_to 'Agregar', new_denuncia_transito_path, {"data-icon" => "plus", "data-theme" => "a"} %>
+</div>
+
+<div data-role="content">
+  <ul data-role="listview">
+
+    <% @denuncia_transitos.each do |denuncia| %>
+        
+        <li>
+        <%= link_to denuncia.nombre, denuncia %>
+       	<%= link_to 'edit denuncia', edit_denuncia_transito_path(denuncia), "data-icon" => "gear" %>
+
+		</li> 
+
+        
+     
+    <% end %>
+    </ul>
+</div>
+
+
+
+

@@ -1,0 +1,65 @@
+<%= form_for(@representante) do |f| %>
+  <% if @representante.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@representante.errors.count, "error") %> prohibited this representante from being saved:</h2>
+
+      <ul>
+      <% @representante.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :num %><br>
+    <%= f.number_field :num %>
+  </div>
+  <div class="field">
+    <%= f.label :nombre %><br>
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :partido %><br>
+    <%= f.text_field :partido %>
+  </div>
+  <div class="field">
+    <%= f.label :eleccion %><br>
+    <%= f.text_field :eleccion %>
+  </div>
+  <div class="field">
+    <%= f.label :estado %><br>
+    <%= f.text_field :estado %>
+  </div>
+  <div class="field">
+    <%= f.label :camara %><br>
+    <%= f.text_field :camara %>
+  </div>
+  <div class="field">
+    <%= f.label :propietario %><br>
+    <%= f.text_field :propietario %>
+  </div>
+  <div class="field">
+    <%= f.label :twitter %><br>
+    <%= f.text_field :twitter %>
+  </div>
+  <div class="field">
+    <%= f.label :youtube %><br>
+    <%= f.text_field :youtube %>
+  </div>
+  <div class="field">
+    <%= f.label :facebook %><br>
+    <%= f.text_field :facebook %>
+  </div>
+  <div class="field">
+    <%= f.label :paginapersonal %><br>
+    <%= f.text_field :paginapersonal %>
+  </div>
+  <div class="field">
+    <%= f.label :twitteravatar %><br>
+    <%= f.text_field :twitteravatar %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,7 @@
+class IniciosController < ApplicationController
+  
+
+
+
+ 
+end
